@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        textarea {
+  resize: none;
+}
+    </style>
+</head>
+<body>
+    <form name="contact" action="" method="get" autocomplete="on"  >
+        <fieldset>
+            <legend>Personalia:</legend>
+        <label for="fullname">Enter Full Name</label>
+        <input autofocus  type="text" placeholder="Navdeep" pattern="[a-z]{3}"size="4" name="fullname" id="fullname" >
+        <br>
+        <label for="age">Enter Age</label>
+        <input type="number"  step="3" name="age" id="age" >
+        <br>
+        <label for="">Gender</label>
+        <br>
+        <label for="gender1">Male:</label>
+        <input type="radio" value="Male" name="gender" id="gender1">
+        <br>
+        <label for="gender2">FeMale:</label>
+        <input type="radio" value="FeMale" name="gender" id="gender2">
+        <br>
+        <label for="gender3">Others:</label>
+        <input type="radio" value="Others" name="gender" id="gender3">
+
+<br>
+<label for="">Hobbies</label>
+<label for="hobby1">Cricket</label>
+<input  type="checkbox" value="cricket" name="hobby" id="hobby1">
+<br>
+<label for="hobby2">Sleeping</label>
+<input type="checkbox" value="Sleeping" name="hobby" id="hobby2">
+
+<br>
+<label for="msg">Enter your Querry</label>
+<textarea rows="10" cols="30 "  name="message" id="msg" ></textarea>
+<br>
+<output name="x" for="a b">gfdgfd</output>
+<select name="country" id="" >
+    <option value="" disabled selected>Choose Country</option>
+    <option value="1">A</option>
+    <option value="2">B</option>
+    <option value="3">C</option>
+    <option value="4">D</option>
+</select>
+<br>
+<select name="" id="">
+    <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+</select>
+<br>
+<input type="range">
+
+<br>
+        
+        <input type="color">
+        <input type="date">
+        <input type="hidden" name="somekiy" value="a">
+        <br>
+        <input type="image">
+        <br>
+        <button disabled type="reset">Reset</button>
+        <input type="Submit" value="submit">
+    </fieldset>
+    </form>
+    <video src=""></video>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+</body>
+</html>

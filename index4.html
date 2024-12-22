@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0"> 
+       <title>Document</title>
+</head>
+<body class="changebg">
+   <!--  <p><a href="index3.html" target="iframe_a">Click Here</a></p>
+    <iframe src="/index2.html" name="iframe_a" width="800" height="900" style="border: none;" title="Iframe Example"></iframe> -->
+   <button id="btn">Click me to see the change</button>
+   <h1>Perform Operation</h1>
+   <img src="img/hero.png" width="300" alt="Image Here">
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione pariatur incidunt veritatis sequi voluptatem ipsum, inventore architecto odit fuga in quasi nam nemo sint deserunt hic quia, itaque minima iste?</p>
+   <code>
+    x = 5;
+    y = 6;
+    z = x + y;
+    </code>
+    <p>&lt;</p>
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+   <details>
+Hello
+<summary>Hey navdeep</summary>
+
+   </details>
+   <figure>
+    <img src="img/hero.png" alt="Trulli">
+    <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+   <script>
+   
+   document.querySelector("#btn").addEventListener("click",function(){
+ 
+   if( document.querySelector(".changebg").style.background===""){
+document.querySelector(".changebg").style.background="black"
+   }else if(document.querySelector(".changebg").style.background==="black"){
+    document.querySelector(".changebg").style.background="white"
+
+   }else{
+   //document.querySelector("h1").innerText="<span>Thanks</span>"
+    // document.querySelector("h1").innerHTML="<span>Thanks</span>"
+    document.querySelector("img").src="hero.png"
+   }
+   
+   })
+
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <script src="/function.js"></script>
+</body>
+
+</html>
+
+

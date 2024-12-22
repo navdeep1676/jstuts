@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<style>
+    table{
+        border: 1px solid black;
+        border-spacing: 0;
+        width: 100%;
+        margin-top: 40px;
+    }
+ 
+    table  tr td, table tr th{
+        border: 1px solid red;
+    }
+    th, td {
+  padding: 15px;
+}
+tr:nth-child(odd) {
+  background-color: #D6EEEE;
+}
+.container{
+    width: 100%;
+    overflow: auto;
+
+}
+.container div{
+width: 33%;
+float: left;
+}
+.inlineblock{
+    display: inline;
+    width: 400px;
+    padding: 30px;
+    margin: 30px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex{
+    display: grid;
+   grid-template-columns: 33% 33% 33%;
+
+}
+.flex div{
+    width: 25%;
+}
+</style>
+</head>
+<body>
+
+<div class="inlineblock">
+    A Div Element
+</div>
+
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+<a href="/index2.html" target="_top">Go to About</a>
+<a href="/index2.html#a">Go Down to h1 tag</a>
+<table>
+    <caption>Monthly savings</caption>
+  
+   <thead>
+    <tr>
+        <th style="width:70%">Sno</th>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+   
+   </thead>
+   <tbody>
+    <tr >
+        <td>1</td>
+        <td>Navdeep</td>
+        <td>25</td>
+    </tr>
+    <tr >
+        <td >1</td>
+        <td>Navdeep</td>
+        <td>25</td>
+    </tr>
+    <tr >
+        <td>1</td>
+        <td>Navdeep</td>
+        <td>25</td>
+    </tr>
+   </tbody>
+    <tfoot style="text-align:right">
+        <tr>
+          <td>Sum</td>
+          <td>$180</td>
+        </tr>
+      </tfoot>
+</table>
+<ol type="i" >
+    <li>mango</li>
+    <li>mango</li>
+    <li><b>Apple</b></li>
+    <ol>
+        <li>apple</li>
+        <li>apple</li>
+        <li>apple</li>
+        <li>apple</li>
+    </ol>
+    <li>mango</li>
+    <li>mango</li>
+</ul>
+<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+  <div>
+    Hello
+  </div>
+  <h1>gffdg heading</h1>
+  <p>gfdgfd para</p>
+  <span>gfdgfdg span</span>
+  <b>gfdgfd bold</b>
+  <i>gfdgfd italic</i>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+ <div class="container">
+    <div style=" height: 400px; background-color: red;  padding: 30px;margin:15px;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+      </div>
+      <div style=" height: 400px; background-color: yellow;  padding: 30px;margin:15px;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+      </div>
+      <div style=" height: 400px; background-color: green;  padding: 30px;margin:15px;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+      </div>
+ </div>
+
+ <div class="flex">
+    <div style="width: 400px; height: 400px;  border: 1px solid black;">1</div>
+    <div style="width: 400px; height: 300px;  border: 1px solid black;">2</div>
+    <div style="width: 400px; height: 200px;  border: 1px solid black;">3</div>
+   
+ </div>
+</body>
+</html>

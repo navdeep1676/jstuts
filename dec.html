@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        div.parent{
+           
+            position: relative;
+            width: 800px;
+            height: 100vh;
+            border: 2px solid black;
+
+
+        }
+        .parent div{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            position: absolute;
+        }
+        span{
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+  <form action="" method="post">
+    <input type="text">
+    <span></span>
+    <h1></h1>
+    <select name="country" id="">
+        <option value="" disabled selected> Choose Country</option>
+        <option value="a1"> Choose Country1</option>
+        <option value="a2"> Choose Country2</option>
+        <option value="a3"> Choose Country3</option>
+        <option value="a4"> Choose Country4</option>
+        <option value="a5"> Choose Country5</option>
+    </select>
+    <span></span>
+    <button type="submit">Change Position</button>
+    <button type="reset">Reset</button>
+  </form>
+<div class="parent">
+    <div></div>
+</div>
+    <script>
+        function handleAnimation(){
+           const div= document.querySelector("div.parent > div")
+           console.log(div);
+           //div.animate([{backgroundColor:"red"},{backgroundColor:"yellow"},{backgroundColor:"pink"},{backgroundColor:"blue"}],1000)
+          // div.animate([{right:0},{right:0,bottom:0},{bottom:0,left:0,right:"auto"},{left:0,top:0}],1000)
+          div.animate({opacity:[0,1]}, {duration:1000, iterations:2}).addEventListener("finish",function(){
+            div.style.display="none"
+          })
+           
+        }
+       document.querySelector("button").addEventListener("click",function(e){
+            
+            return false;
+            
+            
+         
+            
+        }) 
+
+        window.addEventListener("load",function(){
+   console.log("window loaded");               // third
+});
+      /*   document.querySelector("body").addEventListener("contextmenu",function(e){
+            e.preventDefault()
+        }) */
+     /*    document.querySelector("input[type='text']").addEventListener('input',function(e){
+            console.log(e.target.value);
+            document.querySelector("h1").textContent=e.target.value
+            
+        }) */
+     /*    document.querySelector("input[type='text']").addEventListener("focus",function(){
+            this.value=""
+        })
+        document.querySelector("input[type='text']").addEventListener("blur",function(){
+            this.value="I am blurred"
+        })
+        document.querySelector("select[name='country']").addEventListener("change",function(){
+            console.log(this.value);
+            
+        }) */
+
+/*         document.querySelector("div.parent").addEventListener("mouseover",function(){
+  this.innerHTML="Mouse over event done";
+  this.style.backgroundColor="#ccc";
+})
+document.querySelector("div.parent").addEventListener("mousemove",function(e){
+   var x=e.clientX;
+   var y=e.clientY;
+   document.querySelector("h1").textContent=`Cursor location is ${x} , ${y}`;
+}) */
+     /*   document.querySelector("button").onclick=function(){
+        alert("I am clicked via event listener click ")
+        console.log(this);
+       } */
+       document.querySelector("div.parent").addEventListener("mouseover",function(){
+  this.innerHTML="mouse is in now";
+});
+document.querySelector("div.parent").addEventListener("mouseout",function(){
+  this.innerHTML="mouse is out now";
+});
+document.querySelector("div.parent").addEventListener("mousedown",function(){
+  this.innerHTML="mouse left key is pressed";
+});
+document.querySelector("div.parent").addEventListener("mouseup",function(){
+  this.innerHTML="mouse left key is released";
+});
+
+
+/* document.querySelector("input").addEventListener("keypress",function(e){
+     var x=e.which;    // keycode 
+     console.log(x);
+     
+     var y=String.fromCharCode(x);
+  this.nextElementSibling.innerHTML=`you pressed ${y} key and keycode is "${x}`;
+}) */
+
+
+/* document.querySelector("input").addEventListener("keypress",function(e){
+     var x=e.which;    // keycode 
+     console.log(e);
+     
+     if( e.shiftKey){
+        document.querySelector("h1").textContent="Shift key is pressed";
+     }
+     else{
+        document.querySelector("h1").textContent="Shift key was not pressed";
+     }
+});
+ */
+
+window.addEventListener("keydown",function(e){
+    let x=e.which;
+    document.querySelector('h1').innerHTML=`keycode is ${x}.`;
+})
+
+document.querySelector("form").addEventListener("submit",function(e){
+    e.preventDefault()
+    let name=document.querySelector("input[type='text']");
+    let country=document.querySelector("select[name='country']");
+    if(name.value===""){
+        name.nextElementSibling.textContent="Please enter some value";
+        name.nextElementSibling.style.display="block"
+
+    } else if(country.value===""){
+        country.nextElementSibling.style.display="block"
+
+        country.nextElementSibling.textContent="Please chhose country"
+        name.nextElementSibling.textContent=""
+        name.nextElementSibling.style.display="none"
+
+    }else{
+        country.nextElementSibling.textContent=""
+        country.nextElementSibling.style.display="none"
+
+        alert("Form submitted")
+    }
+})
+
+document.querySelector("form").addEventListener("reset",function(e){
+    const x=window.confirm("would you like to reset?");
+    
+    if( x==false){e.preventDefault() }          // form reset disabled
+    
+})
+    </script>
+</body>
+</html>

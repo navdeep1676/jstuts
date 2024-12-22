@@ -1,0 +1,177 @@
+
+:root{
+  --blue: #1e90ff;
+  --white: #ffffff;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+html{
+  font-size: 20px;
+}
+body{
+  background-color: black;  
+}
+
+@keyframes abc{
+  0%{margin-left: 10px; top:10px; right:10px;}
+  20%{margin-left: 100px; top:50px; right:160px;}
+  30%{margin-left: 50px; top:10px; right:10px;}
+  40%{
+    margin-left: 200px; top:40px; right:40px;
+  }
+  60%{
+    margin-left: 0px; top:150px; right:10px;
+  }
+  90%{
+    margin-left: 500px; top:10px; right:150px;
+  }
+  100%{margin-left: 0px; top:140px; right:10px;}
+
+}
+h1{
+    color: var(--blue);
+    margin-left: 0px;
+    animation-name: abc;
+    animation-duration: 4s;
+    position: relative;
+    animation-delay: 1s;
+    animation-iteration-count: 3;
+}
+p{
+    /* font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    
+  
+    font-variant: small-caps;
+    line-height: 25px; */
+    font:   12px/30px "Poppins", serif;
+    color: white;
+}
+
+#bold{
+    color: red;
+}
+div > p{
+    color: aqua;
+}
+div b{
+    color: azure;
+}
+/* div + p{
+    color: orange;
+} */
+ div ~ p:hover{
+    color: aquamarine;
+ }
+
+ p i:first-child{
+    color: blueviolet;
+ }
+
+
+
+
+ p::first-letter{
+    color: cadetblue;
+ }
+
+ h1::before{
+    content: ".";
+ }
+ h1::after{
+    content: "Thanks";
+    margin-left: 20px;
+ }
+ ul li {
+    color: white;
+ }
+ ul.a ::marker{
+    color: red;
+ }
+ ul.b ::marker{
+    color: yellow;
+ }
+
+ ::selection {
+    color: red;
+    background: yellow;
+  }
+
+  a[target="_self"]{
+    color: chocolate;
+  }
+
+  p[title~="red"]{
+    background-color: aqua;
+  }
+
+ 
+  [class|="red"] {
+    background-color: red;
+  }
+  [class^="red"] {
+    background-color: green;
+  }
+ 
+  [class$="red"] {
+    background-color: green;
+  }
+/* selector
+
+gd gfd
+gdfgfd
+gf*/
+  [class*="re"] {
+    background-color: yellowgreen; /* giving background */
+  }
+
+
+  .bg-red{
+   /*background-color: red;  */
+   /* background-image: url('https://png.pngtree.com/png-vector/20191121/ourmid/pngtree-blue-bird-vector-or-color-illustration-png-image_2013004.jpg');
+   background-repeat: no-repeat;
+   background-attachment:scroll; */
+   background: #adadad url("./img/hero.png") no-repeat right top;
+  }
+
+
+  .border{
+   border:2px ridge red;
+   width:300px;
+   height: 300px;
+  }
+
+  .box-model{
+   width: 50%;
+   height: 200px;
+   background-color: aliceblue;
+   padding: 20px;
+  /*  border:10px solid aquamarine; */
+   margin: auto;
+   outline: 2px solid green;
+   outline-offset: 15px;
+  }
+
+  .inner-box{
+   width: 50%;
+   height: 100%;
+   background: yellow;
+  }
+  .inner-box p{
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+    background-color: lightgrey;
+    text-decoration:overline underline;
+    text-decoration-color: red;
+  /*   text-align-last: right; */
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-decoration-style: double;
+    text-decoration-thickness: 15px;
+    text-transform: lowercase;
+
+  }

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 data-id="hgdhgd" class="h6">Js</h1>
+    <input value="navdeep dahiya" type="text" name="fullname">
+    <img width="200" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-115539402943y50vxr5yi.png" class="img" alt="" srcset="">
+    <form name="contact" action="">
+        <input value="navdeep" type="text" name="fullname">
+        <input type="radio" value="male" name="gender" id="">
+        <input type="radio" value="female" name="gender" id="">
+        <input type="radio" value="other" name="gender" id="">
+    </form>
+    <button onclick="changeMode()">Change Mode</button>
+    <button onclick="document.querySelector('.img').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png'">Change Navdeep to navdeep</button>
+    <script>
+    "use strict" 
+
+    document.querySelector(".h6").textContent='<h1>hello i am changed</h1>'
+    console.log(document.contact.fullname.value);
+    console.log(document.querySelector("form > input[name='fullname']").value);
+    console.log(document.querySelector("input[name='gender']").checked);
+   console.log( document.querySelector(".h6").classList);
+   console.log(document.querySelector(".h6").className);
+   /* document.querySelector(".img").src="helllo"
+   document.querySelector(".img").src="./img/hero.png" */
+
+   document.querySelector(".img").width="100"
+   console.log(document.querySelector(".h6").getAttribute("data-id"));
+   document.querySelector(".h6").setAttribute('data-name','navdeep')
+   document.querySelector(".h6").removeAttribute("data-id")
+
+const span=document.createElement("span")
+span.textContent="hello"
+   document.querySelector(".h6").append(span)
+   
+
+   
+  
+ 
+   
+    
+    
+    
+   
+     /*    
+       var a=5;
+      var a=8;
+       var b=6;
+       var c=a+b;
+        console.log(c);
+        const y=90;
+      
+
+
+
+        let x=4;
+       
+        x=45;
+        function checkScope(){
+            var b=10;
+     
+            let x=5;
+            
+            console.log(x, "I am from out x");
+            console.log(b,"i am inside");
+            
+            
+        } */
+       /*  console.log(name); */
+        
+       /*  console.log(b,"i am outside");
+        
+        console.log(x);
+        
+       checkScope() */
+
+       // Var: GlobalScope, if in function then function scope, can redeclare var with same name, and reassign value
+       // Let: Block Scope, can't redeclare with same name, and can reassign the value
+       // Const: Block Scope, can't redeclare and can't reassign the value
+
+// Reserved Keywrods
+
+// let
+// const
+// var
+// for
+// switch
+// async
+// defer
+// for if else 
+        
+
+   let                             navdeep               =                        "Hey i am navdeep"
+// Keyword to declare variable   // Identifier , name    // assignment operator   // value
+
+// Datatype in js
+// String
+/* let myname= "My name is navdeep";
+let count= 8;
+let bigint = BigInt("123456789012345678901234567890");
+let isEligible=true || false
+let arr=[1,"gfdgfd",[1,245,55],{a:6},true]
+console.log(arr);
+
+let car=null;
+let abc;
+console.log(abc);
+console.log(typeof abc); */
+
+
+
+
+/* let name="navdeep"
+
+console.log("name before overriding",   name);
+
+
+
+let hello=name;
+console.log("hello before overriding",  hello);
+
+hello="navdeep dahiya"
+
+console.log(hello);
+console.log(name);
+
+
+let person={name:"navdeep",age:25}
+let person1=new Object()
+person1.name="hello";
+console.log(person1);
+
+
+let arr=[1,3,4,6,6,7]
+let arr2=new Array(1,3,5,6,7,8)
+
+
+let para=`gfdgfdgdfgfd
+gdfgdfgfd`
+
+
+const a=Symbol("a");
+        const b=Symbol("a");
+        console.log(a===b);    */  // false
+
+
+        let a=5;
+        let b="hello navdeep"
+     /*   
+        console.log(a--);
+        console.log(a**5); */
+
+        // &&
+
+        console.log(!(1>3 || 4>5));
+        console.log(a+=2); //a=a+2 a=5+2
+        console.log(a-=2); //a=a-2 a=5-2
+        console.log(a*=2); //a=a*2 a=5*2
+        console.log(a);
+        
+        console.log(a/=2); //a=a/2 a=5/2
+
+
+        console.log(1<2 ?? "hello");
+
+console.log(a,b);
+
+
+        console.log(a==b);
+        console.log(a===b);
+
+        console.log(false===0);
+
+        console.log(3!=="3");
+        console.log(4<4);
+        let x="5"
+        let y=String("hello")
+        console.log(typeof y);
+
+
+        console.log(`Sum of two number a + b=${a-b}`.length);
+        console.log(b.length);
+   
+        console.log(b.length);
+        console.log(b.at(4));
+        console.log(b.at(-1));
+        console.log(b.at(-2));
+        console.log(b.indexOf("y"));
+        console.log(b.lastIndexOf("e"));
+
+        console.log(b.concat(" Thanks"));
+        console.log(b.charAt(0));
+        console.log(b.charCodeAt(1));
+        console.log(b.toUpperCase());
+        console.log(b.toLowerCase());
+        console.log(b.substr(3,2));
+        console.log(b.search(" "));
+        console.log(b.trim());
+        console.log(b.replace("hello","hey"));
+        /* console.log(b.split("e")); */
+        console.log(b.startsWith("y"));
+        console.log(b.includes("ll"));
+        console.log(String.fromCharCode(101));
+
+
+        // Number 
+        let num=NaN;
+        console.log(typeof num);
+        
+       /*  num=parseInt(num) */
+        console.log(typeof num);
+        
+     /*    let changeToString=num.toFixed(1)
+        console.log(changeToString); */
+        console.log(isNaN(NaN));
+        /* abc("NAVDEEP")
+        sum(1,4) */
+        function abc(str){
+            console.log(this);
+            
+            console.log(str.toLowerCase());
+            return str.toLowerCase()
+             
+        }
+
+        const sum=function(a=7,b=3.14){
+            return a+b
+        }
+     /*    alert("hello") */
+
+    const multiply=(a,b)=>a*b;
+
+
+        
+
+    function parent(){
+        return function (){
+           
+            
+            return "hello"
+            console.log(this);
+        }
+    }
+    document.querySelector("h1").addEventListener("click",parent)
+
+/* function person1(){}
+person1.name="Abc"
+person1.age=25
+person1.role="Developer" */
+
+const person2={
+    name:"gfdgfd",
+    age:"gfdgfd"
+}
+    
+/* (function(x){
+alert(`thanks ${x}`)
+}("navdeep")) */
+       
+        var numa=4;
+
+        function parent2(){
+            let a=5;
+
+            function child2(){
+                
+               console.log(a);
+               return a
+            }
+            return child2
+        }
+        
+        
+
+
+
+        
+        
+        
+        
+        function main(x){
+            console.log("I am from main",x);
+            
+            x()
+        }
+        function callback(){
+            console.log("hii from callback");
+            
+        }
+        
+        main(callback)
+        
+
+
+        const arr=[1,2,3,4,5,6,7,8];
+        const findOdd=arr.filter((item)=>
+    {
+       return  item%2!==0
+    })
+        
+        console.log(findOdd);
+        console.log("hello  1");
+
+/*         setTimeout(()=>{
+console.log("hello1");
+
+        },3000)
+        setTimeout(()=>{
+console.log("hello2");
+
+        },4000)
+        setTimeout(()=>{
+console.log("hello3");
+
+        },5000) */
+       /*  let i=1
+        setInterval(()=>{
+console.log(i++);
+
+        },1000) */
+        
+    /*     console.log(findOdd);
+        
+        
+        
+        
+        function startClass(x,y,z){    
+        console.log(" Class starts at", x);
+        y(z);
+    }
+    
+    function onProjector(x){
+        console.log("Projector running using ", x)
+    }
+
+    startClass(10,onProjector,"hdmi");
+
+    const func=()=>{
+        console.log(this);
+        
+    } */
+
+    let numc="hello";
+    if(!isNaN(numc)){
+       console.log("I am isNan");
+       
+        
+    }else if(numc%2!==0){
+    console.log(" i am odd");
+    
+    }
+    else if(numc%2===0){
+        console.log("I am even");
+    }
+    else{
+        console.log("I am in else");
+        
+    }
+        
+        
+const callapi=async()=>{
+    try{
+        const a=5;
+        a=6;
+        return a;
+    }catch(error){
+        console.log(error);
+        
+    }
+    finally{
+        console.log("I am always working");
+        
+    }
+}
+
+
+        function changeMode() {
+            if(document.body.style.background==="black"){
+                document.body.style.background="white"
+            }else if(document.body.style.background==="white"){
+                document.body.style.background="black"
+            }else{
+                document.body.style="background:#222; color:#fff";
+            }
+            console.log(document.body.style.background);
+        }
+        document.querySelector("h1").style.background="red"
+
+
+      
+        
+        console.log(getComputedStyle(document.querySelector("h1")).display);
+        
+        
+        
+        
+        
+        
+        
+
+
+    </script>
+</body>
+</html>
