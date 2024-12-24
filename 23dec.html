@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="div1" style="width: 400px; height: 400px;">
+    <button id="btn1">Click Here</button>
+    <ul>
+     
+    </ul>
+   </div>
+    <script>
+
+/* document.querySelector("#div1").addEventListener("touchstart",function(){
+alert("tapped on div")
+})  */
+/* document.querySelector("#div1").addEventListener("touchend",function(){
+alert("touch end on div")
+}) */
+/*       document.querySelector("#div1").addEventListener("click",function(){
+alert("clicked on div")
+}) 
+document.querySelector("#btn1").addEventListener("click",function(e){
+  e.stopPropagation()
+alert("clicked on btn")
+}) 
+document.querySelector("#btn1").addEventListener("click",function(e){
+ 
+alert("clicked on btn")
+}) 
+document.querySelector("#btn1").addEventListener("click",function(e){
+ 
+alert("clicked on btn")
+})  */
+/* const btn=document.querySelector("button");
+    btn.addEventListener("click", remove); */
+        
+  /*   function remove(){
+        alert("Clicked");
+        btn.removeEventListener("click",remove)
+    }
+        document.querySelector("#btn1").addEventListener("click",function(){
+            remove()
+           
+                document.querySelector("#btn1").removeEventListener("click",)
+           
+
+        }) */
+
+      /*   const t=document.querySelector("i;");
+        t.addEventListener("click",function(e){
+            e.stopPropagation()
+            console.log(e.target.tagName);
+            if(e.target.tagName==="LI"){
+                alert(e.target.textContent)
+            }
+            
+        }) */
+
+
+      /*   let i=12;
+        while(i<10){
+            console.log(i);
+            i++
+            
+        } */
+      /*  let i=12;
+       do{
+   console.log(i);
+    i++;
+
+
+       }
+       while(i<10) */
+/* 
+const ul =document.querySelector("ul")
+       for(let i=0; i<10;i=i+2){
+     ul.innerHTML+=`<li>${i}</l1>`
+        
+       } */
+
+
+     /*   for(let i=1;i<=10;i++){
+
+        for (let j = 1; j <= 10; j++) {
+          console.log(i,j);
+          
+        }
+       } */
+
+
+      const arr=[1,2,3,4,5]
+
+       /*  for(let i in arr){
+        console.log(arr[i]);
+        
+       } */
+
+    /*    const obj={name:"Navdeep",age:"25",} */
+     /*   for(let i  of arr){
+        console.log(i);
+        
+       }
+ */
+
+       //for of == array
+       // for in on both array and object 
+       // in case of object for in return key
+       // in case of array for in return index
+       // for of return element value
+
+       arr.forEach((i)=>{
+        console.log(i);
+        
+       })
+    const data=   arr.map((i)=>{
+        return i*2
+       })
+       console.log(arr);
+       
+console.log(data);
+
+    </script>
+</body>
+</html>
