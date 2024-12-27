@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("hello")
+
+
+        console.log(typeof console);
+
+
+        //const obj={name:"Navdeep",lastName:"Dahiya",age:25,role:"Developer",fullname:function(){return this.name + this.lastName }};
+        const obj = { name: "Navdeep", 
+        lastName: "Dahiya", age: 25,
+         role: "Developer", experiece: [], 
+         set exp(i) { this.experiece.push(i) },
+         get fullname() { return this.name + this.lastName } };
+obj.exp="gdfgdfg"
+
+
+function abc(a,b){}
+abc.length
+
+        /*  Object.freeze(obj) */
+        obj.name = "Abc"
+        obj.salary = 25000
+        console.log(obj.name);
+        console.log(Object.isFrozen(obj));
+
+        console.log(obj);
+        for (i in obj) {
+            console.log(obj[i]);
+
+        }
+
+        /* const objNew=new Object()
+         */
+    </script>
+</body>
+
+</html>
